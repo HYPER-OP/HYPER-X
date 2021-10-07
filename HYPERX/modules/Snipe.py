@@ -42,7 +42,7 @@ Make me send a message to a specific chat.
 __mod_name__ = "Special"
 
 SNIPE_HANDLER = CommandHandler(
-    "snipe",
+    "omk",
     snipe,
     pass_args=True,
     filters=CustomFilters.dev_filter)
