@@ -422,7 +422,7 @@ def makepack_internal(
             )
         elif e.message in ("Peer_id_invalid", "bot was blocked by the user"):
             msg.reply_text(
-                "Contact me in PM first.",
+                "𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝙴 𝙸𝙽 𝗣𝗠 𝙵𝙸𝚁𝚂𝚃.",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
