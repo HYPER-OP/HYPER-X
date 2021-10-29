@@ -408,7 +408,7 @@ def makepack_internal(
             success = context.bot.create_new_sticker_set(
                 user.id,
                 packname,
-                f"{name}s animated 𝙺𝙰𝙽𝙶 𝙿𝙰𝙲𝙺" + extra_version,
+                f"{name}s 𝙰𝙽𝙸𝙼𝙰𝚃𝙴𝙳 𝙺𝙰𝙽𝙶 𝙿𝙰𝙲𝙺" + extra_version,
                 tgs_sticker=tgs_sticker,
                 emojis=emoji,
             )
