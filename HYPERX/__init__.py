@@ -168,6 +168,7 @@ else:
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
+    STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
