@@ -70,6 +70,7 @@ if ENV:
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
+    STRING_SESSION = os.environ.get("STRING_SESSION", None) 
     DB_URI = os.environ.get("DATABASE_URL")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
@@ -152,6 +153,9 @@ else:
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
     OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
     BOT_ID = Config.BOT_ID
+    API_ID = Config.API_ID
+    API_HASH = Config.API_HASH
+    STRING_SESSION = Config.STRING_SESSION
     VIRUS_API_KEY = Config.VIRUS_API_KEY
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
@@ -195,6 +199,7 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("innexia", API_ID, API_HASH)
 pbot = Client("HYPERX", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
