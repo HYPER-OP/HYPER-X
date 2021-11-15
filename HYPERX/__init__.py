@@ -11,6 +11,7 @@ from Python_ARQ import ARQ
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
 from telethon.sessions import StringSession
+from aiohttp import ClientSession
 
 StartTime = time.time()
 
@@ -91,6 +92,7 @@ if ENV:
     BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg")
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
+    ARQ_API = os.environ.get("ARQ_API", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
@@ -99,6 +101,8 @@ if ENV:
     REDIS_URL = os.environ.get('REDIS_URL', None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     SESSION_NAME = os.getenv("SESSION_NAME")
+    ARQ_API_URL = "https://thearq.tech"
+    ARQ_API_KEY = ARQ_API
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -151,6 +155,8 @@ else:
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     MONGO_DB_URI = Config.MONGO_DB_URI
+    ARQ_API = Config.ARQ_API_KEY
+    ARQ_API_URL = Config.ARQ_API_URL
     HEROKU_API_KEY = Config.HEROKU_API_KEY
     HEROKU_APP_NAME = Config.HEROKU_APP_NAME
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
@@ -203,6 +209,11 @@ telethn = TelegramClient("innexia", API_ID, API_HASH)
 pbot = Client("HYPERX", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+aiohttpsession = ClientSession()
+# ARQ Client
+print("[INFO]: INITIALIZING ARQ CLIENT")
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
