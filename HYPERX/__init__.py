@@ -7,6 +7,7 @@ from redis import StrictRedis
 
 import telegram.ext as tg
 from pyrogram import Client, errors
+from Python_ARQ import ARQ
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
 from telethon.sessions import StringSession
