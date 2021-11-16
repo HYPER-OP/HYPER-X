@@ -45,7 +45,6 @@ ujson
 pretty_errors
 TgCrypto
 Pyrogram
-youtube-dl
 youtube_search_python
 youtube_search
 asyncio
@@ -71,7 +70,6 @@ motor
 cloudscraper
 gitpython==3.1.11
 redis
-youtube_dl
 
 #ImageEditor
 glitch_this
