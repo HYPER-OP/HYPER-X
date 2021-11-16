@@ -71,7 +71,7 @@ cloudscraper
 gitpython==3.1.11
 redis
 
-#ImageEditor
+#ImageEdito
 glitch_this
 NumPy
 opencv-python-headless
