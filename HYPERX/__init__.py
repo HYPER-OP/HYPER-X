@@ -7,11 +7,9 @@ from redis import StrictRedis
 
 import telegram.ext as tg
 from pyrogram import Client, errors
-from Python_ARQ import ARQ
 from telethon import TelegramClient
 from telethon.sessions import MemorySession
 from telethon.sessions import StringSession
-from aiohttp import ClientSession
 
 StartTime = time.time()
 
@@ -209,10 +207,6 @@ telethn = TelegramClient("innexia", API_ID, API_HASH)
 pbot = Client("HYPERX", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
-aiohttpsession = ClientSession()
-# ARQ Client
-print("[INFO]: INITIALIZING ARQ CLIENT")
-arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
