@@ -48,4 +48,5 @@ motor
 aiofiles
 search_engine_parser
 nekos.py
-flag
+emoji-country-flag
+youtube_dl
