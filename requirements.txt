@@ -37,3 +37,4 @@ redis
 Pyrogram
 TgCrypto
 cloudscraper
+wget
