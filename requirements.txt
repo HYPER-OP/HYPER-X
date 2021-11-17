@@ -57,3 +57,7 @@ bing_image_downloader
 envparse
 nudepy
 hachoir
+#ImageEditor
+glitch_this
+NumPy
+opencv-python-headless
