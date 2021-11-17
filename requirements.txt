@@ -41,3 +41,4 @@ wget
 faker
 gtts
 lyricsgenius
+heroku3
