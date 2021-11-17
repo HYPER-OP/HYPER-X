@@ -50,3 +50,4 @@ search_engine_parser
 nekos.py
 emoji-country-flag
 youtube_dl
+nude
