@@ -36,3 +36,4 @@ zalgo-text
 redis
 Pyrogram
 TgCrypto
+cloudscraper
