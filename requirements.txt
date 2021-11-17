@@ -40,3 +40,4 @@ cloudscraper
 wget
 faker
 gtts
+lyricsgenius
