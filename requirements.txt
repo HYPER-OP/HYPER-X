@@ -42,3 +42,4 @@ faker
 gtts
 lyricsgenius
 heroku3
+telegraph
