@@ -68,7 +68,6 @@ motor
 cloudscraper
 gitpython==3.1.11
 redis
-tqdm==4.54.1
 Python_ARQ
 
 
@@ -77,4 +76,3 @@ glitch_this
 NumPy
 opencv-python-headless
 youtube_dl
-requests
