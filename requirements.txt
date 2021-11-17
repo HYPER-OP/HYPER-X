@@ -70,6 +70,7 @@ motor
 cloudscraper
 gitpython==3.1.11
 redis
+tqdm==4.54.1
 
 #ImageEditor
 glitch_this
