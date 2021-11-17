@@ -54,3 +54,4 @@ tswift
 html2text
 secureme
 bing_image_downloader
+envparse
