@@ -74,3 +74,4 @@ tqdm==4.54.1
 glitch_this
 NumPy
 opencv-python-headless
+youtube_dl
