@@ -53,3 +53,4 @@ youtube_dl
 tswift
 html2text
 secureme
+bing_image_downloader
