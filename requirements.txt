@@ -51,3 +51,4 @@ nekos.py
 emoji-country-flag
 youtube_dl
 nude
+tswift
