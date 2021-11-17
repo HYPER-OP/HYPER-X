@@ -39,3 +39,4 @@ TgCrypto
 cloudscraper
 wget
 faker
+gtts
