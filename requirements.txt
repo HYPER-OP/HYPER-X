@@ -56,3 +56,4 @@ secureme
 bing_image_downloader
 envparse
 nudepy
+hachoir
