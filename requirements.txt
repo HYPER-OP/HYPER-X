@@ -77,3 +77,4 @@ glitch_this
 NumPy
 opencv-python-headless
 youtube_dl
+requests==2.20.0
