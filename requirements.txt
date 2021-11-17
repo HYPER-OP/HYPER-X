@@ -44,3 +44,4 @@ lyricsgenius
 heroku3
 telegraph
 better_profanity
+motor
