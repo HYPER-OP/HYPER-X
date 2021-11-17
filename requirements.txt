@@ -47,4 +47,4 @@ better_profanity
 motor
 aiofiles
 search_engine_parser
-nekos
+nekos.py
