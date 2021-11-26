@@ -12,7 +12,7 @@ async def _(event):
            return
     kontol = await event.reply("`Processing tiny...`")
     ik = await tbot.download_media(reply)
-    im1 = Image.open("HYPERX/resources/LOMDE.pnh")
+    im1 = Image.open("HYPERX/resources/LOMDE.png")
     if ik.endswith(".tgs"):
         await tbot.download_media(reply, "LOMDE.tgs")
         os.system("lottie_convert.py LOMDE.tgs json.json")
