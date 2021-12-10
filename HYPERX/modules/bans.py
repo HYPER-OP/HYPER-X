@@ -56,10 +56,10 @@ def ban(update: Update, context: CallbackContext) -> str:
     except BadRequest as excp:
         if excp.message != "User not found":
             raise
-        message.reply_text("Can't seem to find this person.")
+        message.reply_text("𝙻𝙼𝙰𝙾 😹")
         return log_message
     if user_id == bot.id:
-        message.reply_text("Oh yeah, ban myself, noob!")
+        message.reply_text("𝙻𝙼𝙰𝙾 😹")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
