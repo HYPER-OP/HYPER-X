@@ -64,7 +64,7 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a God level disaster huh?")
+            message.reply_text("𝙱𝙰𝙰𝙿 𝙺𝙾 𝙱𝙰𝙽 𝙺𝚁𝙴𝙶𝙰 𝚁𝙰𝙽𝙳𝙸𝙺𝙴 😹")
         elif user_id in DEV_USERS:
             message.reply_text("I can't act against our own.")
         elif user_id in DRAGONS:
