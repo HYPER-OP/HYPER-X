@@ -66,7 +66,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         if user_id == OWNER_ID:
             message.reply_text("𝙱𝙰𝙰𝙿 𝙺𝙾 𝙱𝙰𝙽 𝙺𝚁𝙴𝙶𝙰 𝚁𝙰𝙽𝙳𝙸𝙺𝙴 😹")
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our own.")
+            message.reply_text("𝙱𝙰𝙰𝙿 𝙺𝙾 𝙱𝙰𝙽 𝙺𝚁𝙴𝙶𝙰 𝚁𝙰𝙽𝙳𝙸𝙺𝙴 😹")
         elif user_id in DRAGONS:
             message.reply_text(
                 "Fighting this Dragon here will put civilian lives at risk."
