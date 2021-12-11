@@ -1,7 +1,7 @@
 import threading
 
 from HYPERX.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, UnicodeText
+from sqlalchemy import Boolean, Column, BigInteger, UnicodeText
 
 
 class AFK(BASE):
