@@ -1,6 +1,6 @@
 import threading
 
-from sqlalchemy import Column, String, UnicodeText, BugInteger, func, distinct
+from sqlalchemy import Column, String, UnicodeText, BigInteger, func, distinct
 
 from HYPERX.modules.sql import BASE, SESSION
 
