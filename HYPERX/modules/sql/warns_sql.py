@@ -1,14 +1,14 @@
 import threading
 
 from HYPERX.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
+from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
 
 
 class Warns(BASE):
     __tablename__ = "warns"
 
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     chat_id = Column(String(14), primary_key=True)
     num_warns = Column(Integer, default=0)
     reasons = Column(postgresql.ARRAY(UnicodeText))
