@@ -1,5 +1,7 @@
 ## 𝙷𝚈𝙿𝙴𝚁 𝐗
 
+## DEPLOY USING THE IMAGE 
+
 [![Deploy](https://telegra.ph/file/4f85a1383a0fe3cd9c73f.jpg)](https://heroku.com/deploy?template=https://github.com/HYPER-OP/HYPER-X
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃 - 
