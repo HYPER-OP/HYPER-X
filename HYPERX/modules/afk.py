@@ -125,7 +125,7 @@ def reply_afk(update: Update, context: CallbackContext):
 
 def check_afk(update, context, user_id, fst_name, userc_id):
     if sql.is_afk(user_id):
-user = sql.check_afk_status(user_id)
+        user = sql.check_afk_status(user_id)
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
@@ -151,9 +151,9 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-mod_name = "AFK"
-command_list = ["afk"]
-handlers = [
+__mod_name__ = "AFK"
+__command_list__ = ["afk"]
+__handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
     (AFK_REGEX_HANDLER, AFK_GROUP),
     (NO_AFK_HANDLER, AFK_GROUP),
