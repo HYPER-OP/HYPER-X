@@ -1,4 +1,3 @@
-ड𝗮𝗞𝗨〆卄YקƎᖇ 🇮🇳:
 import random, html
 
 from HYPERX import dispatcher
