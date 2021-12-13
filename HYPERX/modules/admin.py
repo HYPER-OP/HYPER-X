@@ -119,7 +119,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 @can_promote
 @user_admin
 @loggable
-def promote(update: Update, context: CallbackContext) -> str:
+def fullpromote(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
 
