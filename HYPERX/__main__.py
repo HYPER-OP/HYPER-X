@@ -107,7 +107,7 @@ Main Commands Available :
 - /start: Start's The Bot.
 - /help: Pm's You This Message.
 
-Click On The Buttons Below To Get Documentation About Specific Modules.[.](https://telegra.ph/file/71406119a6df4203ffb44.jpg)"""
+Click On The Buttons Below To Get Documentation About Specific Modules.[.](https://telegra.ph/file/f34a4d33e77d0826fbdcc.jpg)"""
 
 
 
