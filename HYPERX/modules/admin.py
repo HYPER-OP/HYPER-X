@@ -741,6 +741,7 @@ __help__ = """
  ❍ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
  ❍ /zombies: counts the number of deleted account in your group
  ❍ /zombies clean: Remove deleted accounts from group..
+  ❍ /fullpromote : ᴘʀᴏᴍᴏᴛᴇs ᴛʜᴇ ᴜsᴇʀ ᴡɪᴛʜ ғᴜʟʟ ᴀᴅᴍɪɴ ʀɪɢʜᴛs
 
 *Note:* Night Mode chats get Automatically closed at 12 am(IST)
 and Automatically openned at 6 am(IST) To Prevent Night Spams.
@@ -792,7 +793,7 @@ dispatcher.add_handler(SETCHAT_TITLE_HANDLER)
 dispatcher.add_handler(SETSTICKET_HANDLER)
 dispatcher.add_handler(SETDESC_HANDLER)
 
-__mod_name__ = "Admin"
+__mod_name__ = "ᴀᴅᴍɪɴ"
 __command_list__ = [
     "adminlist",
     "admins",
