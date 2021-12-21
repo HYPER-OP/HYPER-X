@@ -16,12 +16,14 @@ from HYPERX.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from HYPERX.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from HYPERX.modules.helper_funcs.extraction import (
+    extract_user,
+    extract_user_and_text,
+)
 from HYPERX.modules.log_channel import loggable
-from HYPERX.modules.language import gs
-from HYPERX.modules.helper_funcs.decorators import kigcmd
+from HYPERX.modules.helper_funcs.alternate import send_message
+from HYPERX.modules.helper_funcs.alternate import typing_action
 
-from ..modules.helper_funcs.anonymous import user_admin, AdminPerms
 
 
 @kigcmd(command="promote", can_disable=False)
