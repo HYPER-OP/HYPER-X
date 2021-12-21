@@ -6,7 +6,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from HYPERX import SUDO_USERS
+from HYPERX import DEV_USERS
 from HYPERX.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
