@@ -37,7 +37,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
 
 # Check if user has admin rights
-async def is_administrator(user_id: int, message):
+async def is_administrator(user_id: int, chat_id):
     lol = []
     admin = False
     async for user in telethn.iter_participants(
@@ -55,9 +55,9 @@ async def is_administrator(user_id: int, message):
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
 # Well
-    chat_id = event.chat_id
+    chatid = event.chat_id
     user  = event.from_id
-    if not await is_administrator(user_id=user, chat_id):
+    if not await is_administrator(user_id=user, chatid):
         await event.respond("You're Not An Admin!")
         return
 
