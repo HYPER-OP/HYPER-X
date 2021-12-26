@@ -53,7 +53,15 @@ async def is_administrator(user_id: int, message):
 @telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
+# Well
+    if not await is_administrator(user_id=event.from_id, message=event):
+        await event.respond("You're Not An Admin!")
+        return
 
+    if not admin and not creator:
+        await event.respond("I Am Not An Admin Here!")
+        return
+    
     con = event.pattern_match.group(1).lower()
     del_u = 0
     del_status = "No Deleted Accounts Found, Group Is Clean."
@@ -76,14 +84,7 @@ async def zombies(event):
     admin = chat.admin_rights
     creator = chat.creator
 
-    # Well
-    if not await is_administrator(user_id=int(event.from_id), message=event):
-        await event.respond("You're Not An Admin!")
-        return
-
-    if not admin and not creator:
-        await event.respond("I Am Not An Admin Here!")
-        return
+    
 
     cleaning_zombies = await event.respond("Cleaning Zombies...")
     del_u = 0
