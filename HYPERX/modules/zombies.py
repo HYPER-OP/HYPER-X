@@ -46,8 +46,11 @@ async def is_administrator(user_id: int, chat_id):
         lol.append(user.id)
     print(lol)
     if user_id in lol or user_id in OFFICERS:
-        admin = True
-        return admin
+        print("ok")
+        return True
+    else:
+        print("no")
+        return False
 
 
 
