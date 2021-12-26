@@ -46,7 +46,6 @@ async def is_administrator(user_id: int, message):
         lol.append(user.id)
     if user_id in lol or user_id in OFFICERS:
         admin = True
-        break
         return admin
 
 
