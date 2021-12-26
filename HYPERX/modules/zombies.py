@@ -44,14 +44,9 @@ async def is_administrator(user_id, chat_id):
         chat_id, filter=ChannelParticipantsAdmins
     ):
         lol.append(user.id)
-    print(lol)
-    print(user_id)
     if user_id in lol or user_id in OFFICERS:
-        print("ok")
-        return True
-    else:
-        print("no")
-        return False
+        admin = True
+        return admin
 
 
 
@@ -63,9 +58,7 @@ async def zombies(event):
         await event.respond("You're Not An Admin!")
         return
 
-    if not admin and not creator:
-        await event.respond("I Am Not An Admin Here!")
-        return
+
     
     con = event.pattern_match.group(1).lower()
     del_u = 0
@@ -88,7 +81,9 @@ async def zombies(event):
     chat = await event.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
-
+    if not admin and not creator:
+        await event.respond("I Am Not An Admin Here!")
+        return
     
 
     cleaning_zombies = await event.respond("Cleaning Zombies...")
