@@ -38,14 +38,16 @@ OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
 
 # Check if user has admin rights
 async def is_administrator(user_id: int, message):
+    lol = []
     admin = False
     async for user in telethn.iter_participants(
         message.chat_id, filter=ChannelParticipantsAdmins
     ):
-        if user_id == user.id or user_id in OFFICERS:
-            admin = True
-            break
-    return admin
+        lol.append(user.id)
+    if user_id in lol or user_id in OFFICERS:
+        admin = True
+        break
+        return admin
 
 
 
@@ -57,7 +59,7 @@ async def zombies(event):
     del_u = 0
     del_status = "No Deleted Accounts Found, Group Is Clean."
 
-    if con == "clean":
+    if con != "clean":
         find_zombies = await event.respond("Searching For Zombies...")
         async for user in event.client.iter_participants(event.chat_id):
 
@@ -76,8 +78,7 @@ async def zombies(event):
     creator = chat.creator
 
     # Well
-    if not await is_administrator(user_id=event.from_id, message=event):
-        print("ok bhai")
+    if not await is_administrator(user_id=int(event.from_id), message=event):
         await event.respond("You're Not An Admin!")
         return
 
