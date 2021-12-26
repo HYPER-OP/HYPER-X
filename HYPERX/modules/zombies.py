@@ -55,9 +55,7 @@ async def is_administrator(user_id: int, chat_id):
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
 # Well
-    chatid = event.chat_id
-    user  = event.from_id
-    if not await is_administrator(user_id=user, chatid):
+    if not await is_administrator(user_id=event.from_id, chat_id=event.chat_id):
         await event.respond("You're Not An Admin!")
         return
 
