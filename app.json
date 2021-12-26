@@ -50,7 +50,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "797768146"
+         "value": "1732292295"
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
