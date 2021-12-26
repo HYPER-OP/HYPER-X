@@ -44,7 +44,6 @@ async def is_administrator(user_id: int, message):
     ):
         if user_id == user.id or user_id in OFFICERS:
             admin = True
-            break
     return admin
 
 
