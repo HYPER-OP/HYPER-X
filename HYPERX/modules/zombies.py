@@ -37,7 +37,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 OFFICERS = [OWNER_ID] + DEV_USERS + DRAGONS + DEMONS
 
 # Check if user has admin rights
-async def is_administrator(user_id: int, chat_id):
+async def is_administrator(user_id, chat_id):
     lol = []
     admin = False
     async for user in telethn.iter_participants(
@@ -45,6 +45,7 @@ async def is_administrator(user_id: int, chat_id):
     ):
         lol.append(user.id)
     print(lol)
+    print(user_id)
     if user_id in lol or user_id in OFFICERS:
         print("ok")
         return True
