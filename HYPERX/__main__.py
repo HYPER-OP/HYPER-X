@@ -88,9 +88,9 @@ buttons = [
             text="Help❓", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="👥 Group", url=f"https://t.me/HYPER_X_SUPPORT"),
+        InlineKeyboardButton(text="👥 Group", url=f"https://t.me/BIONIC_SUPPORT"),
         InlineKeyboardButton(
-            text="Channel 🔔", url=f"https://t.me/HYPERx_UPDATES"
+            text="Channel 🔔", url=f"https://t.me/BIONIC_ROBOTS"
         ),
     ],
     [
