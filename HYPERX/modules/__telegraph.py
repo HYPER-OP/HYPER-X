@@ -41,7 +41,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await h.edit("✓ **[File uploaded to telegraph](https://telegra.ph{})** \n✓ **By :- @HYPERxGROUP_BOT**".format(media_urls[0]), link_preview=True)
+                await h.edit("✓ **[ғɪʟᴇ ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ](https://telegra.ph{})** \n✓ **ʙʏ :- [ʜʏᴘᴇʀX](https://t.me/BIONIC_SUPPORT)**".format(media_urls[0]), link_preview=True)
         elif input_str == "xt":
             user_object = await tbot.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
