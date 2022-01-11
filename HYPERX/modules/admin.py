@@ -170,6 +170,7 @@ def fullpromote(update: Update, context: CallbackContext) -> str:
             can_delete_messages=bot_member.can_delete_messages,
             can_invite_users=bot_member.can_invite_users,
             can_promote_members=bot_member.can_promote_members,
+            can_manage_voice_chat=True,
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
         )
@@ -250,6 +251,7 @@ def demote(update: Update, context: CallbackContext) -> str:
             can_invite_users=False,
             can_restrict_members=False,
             can_pin_messages=False,
+            can_manage_voice_chat=False,
             can_promote_members=False,
         )
 
