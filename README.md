@@ -6,3 +6,5 @@
 
 ## 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃 - 
 [𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴](https://t.me/HYPER_X_SUPPORT) 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝙲𝙴
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=HYPER-OP&theme=radical)
