@@ -9,7 +9,7 @@ from HYPERX import OWNER_ID, DEV_USERS
 from HYPERX import TEMP_DOWNLOAD_DIRECTORY as path
 from HYPERX import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './HYPERX/resources/yone.jpg'
+water = './HYPERX/resources/LOMDE.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
