@@ -1,6 +1,7 @@
 future
 emoji
 lxml
+markdown2
 wget
 gtts
 faker
