@@ -400,7 +400,7 @@ def makepack_internal(
             success = context.bot.create_new_sticker_set(
                 user.id,
                 packname,
-                f"{name}s sᴛɪᴄ-ᴘᴀᴄᴋ (@HYPERxGROUP_BOT)" + extra_version,
+                f"{name}s sᴛɪᴄ-ᴘᴀᴄᴋ (@HyperX_ROBOT)" + extra_version,
                 png_sticker=png_sticker,
                 emojis=emoji,
             )
@@ -408,7 +408,7 @@ def makepack_internal(
             success = context.bot.create_new_sticker_set(
                 user.id,
                 packname,
-                f"{name}s 𝙰𝙽𝙸𝙼𝙰𝚃𝙴𝙳 sᴛɪᴄ-𝙿𝙰𝙲𝙺 (@HYPERxGROUP_BOT)" + extra_version,
+                f"{name}s 𝙰𝙽𝙸𝙼𝙰𝚃𝙴𝙳 sᴛɪᴄ-𝙿𝙰𝙲𝙺 (@HyperX_ROBOT)" + extra_version,
                 tgs_sticker=tgs_sticker,
                 emojis=emoji,
             )
