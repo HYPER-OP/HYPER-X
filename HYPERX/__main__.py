@@ -94,7 +94,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="➕Add Me To Your Chat➕", url="https://t.me/HYPERxGROUP_BOT?startgroup=true"),
+        InlineKeyboardButton(text="➕Add Me To Your Chat➕", url="https://t.me/HyperX_ROBOT?startgroup=true"),
     ],
 ]
 
